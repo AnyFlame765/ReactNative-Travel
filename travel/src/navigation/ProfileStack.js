@@ -12,10 +12,9 @@ export default function ProfileStack() {
    <Stack.Navigator>
         <Stack.Screen 
         name='profileS'
-        component={ScreendePerfil}
+        component={ProfileScreen}
         options={{title:'Perfil'}}
         />
-         
    </Stack.Navigator>
   )
 }

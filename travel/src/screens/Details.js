@@ -5,7 +5,6 @@ export default function Details(props) {
     const {navigation}  = props;
   return (
     <View>
-
         <Button title='ir a inicio ' 
         onPress={()=>navigation.navigate('index')}
         />
