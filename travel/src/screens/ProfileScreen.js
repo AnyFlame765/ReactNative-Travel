@@ -3,6 +3,8 @@ import React from 'react'
 import { Button } from 'react-native-elements'
 import {getAuth, signOut} from 'firebase/auth'
 import { useNavigation } from '@react-navigation/native'
+import ProfileInfo from '../components/account/ProfileInfo'
+
 
 export default function ProfileScreen() {
   const navigation = useNavigation();
@@ -10,12 +12,12 @@ export default function ProfileScreen() {
   const cerrarSesion = async () =>{
     const auth = getAuth();
     await signOut(auth)
-      navigation.navigate("indexs")
+      navigation.navigate("index", {screen:"indexs"})
   }
 
   return (
     <View>
-      <Text>ProfileScreen</Text>
+     <ProfileInfo/>
       <Button
       title="Cerrar Sesion"
       onPress={cerrarSesion}

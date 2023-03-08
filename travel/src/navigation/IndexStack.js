@@ -17,7 +17,7 @@ export default function IndexStack() {
          <Stack.Screen 
         name='login'
         component={LoginSreen}
-        options={{title:'Iniciar- Sesión'}}
+        options={{title:'Iniciar-Sesión'}}
         />
         <Stack.Screen 
         name='registerS'

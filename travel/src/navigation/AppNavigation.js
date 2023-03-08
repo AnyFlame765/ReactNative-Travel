@@ -11,6 +11,7 @@ const Tab = createBottomTabNavigator();
 
 export default function AppNavigation() {
 
+  
   const [session, setSession] = useState(null)
 
   useEffect(() => {
@@ -27,8 +28,8 @@ export default function AppNavigation() {
     <Tab.Navigator
     screenOptions={({ route }) => ({
       headerShown: false,
-      tabBarActiveTintColor: "#e91e63",
-      tabBarInactiveTintColor: "green",
+      tabBarActiveTintColor: "#0D5BD7",
+      tabBarInactiveTintColor: "black",
       tabBarIcon: ({ color, size }) => showIcons(route, color, size),
     })}
   >

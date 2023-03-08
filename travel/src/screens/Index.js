@@ -21,8 +21,7 @@ export default function Index(props) {
         return<Loading  text={'validando Sesion'}/>
     }
     
-
-
+    
     return session ?(
     <View> 
         <Button
@@ -37,7 +36,6 @@ export default function Index(props) {
         title="ir a login"
         onPress={() => navigation.navigate("details", {screen:'login'})}
         />
-
     </View>
     ) : <LoginSreen/>
 }

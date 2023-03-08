@@ -13,7 +13,7 @@ export default function LoginSreen() {
   return (
     <View>
       <Image
-        source={require("../../assets/img/Logo-Spiderman.png")}
+        source={require("../../assets/img/Spiderman.png")}
         style={styles.logo}
       />
 
